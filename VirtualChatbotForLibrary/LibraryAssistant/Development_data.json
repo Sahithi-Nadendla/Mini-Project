@@ -1,0 +1,24 @@
+[{
+    "text":"Engineering Physics McGraw-Hill publications",
+    "entities":[[0,2,"WORK_OF_ART"],[2,5,"ORG"]]
+},
+{
+    "text":"Digital Image Processing textbook by Pearson",
+    "entities":[[0,3,"WORK_OF_ART"],[5,6,"ORG"]]
+},
+{
+    "text":"Getting started with Raspberry Pi OReilly",
+    "entities":[[0,5,"WORK_OF_ART"],[5,6,"ORG"]]
+},
+{
+    "text":"Artificial Intelligence: a modern approach by Russell",
+    "entities":[[0,6,"WORK_OF_ART"],[7,8,"PERSON"]]
+},
+{
+    "text":"Cloud Computing textbooks",
+    "entities":[[0,2,"WORK_OF_ART"]]
+},
+{
+    "text":"Herberts's Java the complete reference",
+    "entities":[[2,6,"WORK_OF_ART"],[0,1,"PERSON"]]
+}]

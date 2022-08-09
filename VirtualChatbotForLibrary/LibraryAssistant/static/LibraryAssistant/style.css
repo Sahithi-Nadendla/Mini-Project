@@ -1,0 +1,80 @@
+*
+{
+    box-sizing: border-box;
+    text-align: center;
+}
+.container
+{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 75% 10%;
+    
+}
+.header
+{
+    background-color: black;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+#title p
+{
+    font-size: 300%;
+    color: white;
+}
+.form
+{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+#bar
+{
+    width: 90%;
+    height: 35%;
+    justify-self: end;
+}
+#click
+{
+    width: 60%;
+    height: 35%;
+    justify-self: start;
+}
+.middle
+{
+    background-color: white;
+}
+.footer
+{
+    background-color: rgb(44, 43, 102);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+#tag p
+{
+    color: white;
+    font-size: 130%;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Gill Sans';
+}
+#chatbot button
+{
+    width: 50%;
+    height: 50%;
+    border: 2px solid white;
+    background-color: white;
+    font-size: 100%;
+}
