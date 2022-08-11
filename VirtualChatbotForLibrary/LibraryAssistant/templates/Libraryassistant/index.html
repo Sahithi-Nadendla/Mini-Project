@@ -32,3 +32,64 @@
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
+#2 commit
+{% load static %}
+<html>
+    <head>
+        <title>Welcome to Library Assistant</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'LibraryAssistant/style.css' %}">
+        <!--<link rel="stylesheet" href="{% static 'LibraryAssistant/chatbot.css' %}">-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div id="title"><p>Library Virtual Assistant</p></div>
+                <div>
+                    <form class="form" action="{% url 'LibraryAssistant:index' %}" method="post">
+                        {% csrf_token %}
+                        <div>{{form}}</div>
+                        <input id="click" type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="middle">
+                    {% for ele in l %}
+                        <p>{{ele}}<p>
+                    {% endfor %}
+            </div>
+            <div class="footer">
+                <p>An interface which makes it easier for you to find books in library !</p>
+            </div>
+        </div>
+        <!--<div id="chatbot">
+            <button id="icon" type="button">Chatbot</button>
+            <div id="content">
+                <div id="chat">
+                    <div id="message-container">
+                        <div id="initial-message" class="bot-message">
+                            <span>Hey! I can help you locate a book in the library.</span>
+                        </div>
+                    </div>
+                    <form class="form" action="{% url 'LibraryAssistant:index' %}" method="post">
+                        {% csrf_token %}
+                        <div>{{form}}</div>
+                        <input id="click" type="submit" value="Search">
+                    </form>
+                    <form id="input" action="{% url 'LibraryAssistant:index' %}" method="post">
+                        {% csrf_token %}
+                        {{form}}
+                        <input id="enter" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>-->
+    </body>
+</html>
